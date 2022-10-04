@@ -15,17 +15,34 @@ void main() {
                 children: [Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      child: Icon(Icons.email,color: Colors.blue),
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.all(Radius.circular(30.0))
+                          ),
+                          child: Icon(Icons.share,color: Colors.blue),
+                        ),
+                        Text('share'),
+                      ],
                     ),
-                    Container(
-                      child: Icon(Icons.shop,color: Colors.red),
+                    Column(
+                      children: [
+                        Container(
+                          child: Icon(Icons.shop,color: Colors.red),
+                        ),
+                        Text("Shop")
+                      ],
                     ),
-                    Container(
-                      child: Icon(Icons.share,
-                          color: Colors.green),
-
-                    )
+                    Column(
+                      children: [
+                        Container(
+                          child: Icon(Icons.email,color: Colors.green),
+                        ),
+                        Text("Share")
+                      ],
+                    ),
                   ],
                 ),]
             ),
